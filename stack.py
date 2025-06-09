@@ -15,12 +15,14 @@ class Stack:
     def pop(self):
         # Remove and return top item of stack
         if self.is_empty():
-            return self.items.pop()
+            return None
+        return self.items.pop()
         
     def peek(self):
         # Return top item without removing it
         if self.is_empty():
-            return self.items[-1]
+            return None
+        return self.items[-1]
         
     def size(self):
         return len(self.items)
